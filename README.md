@@ -152,13 +152,6 @@ In this part, we are dealing with setting up multi-server setup.
 
 ## Verification
 
-1. **Access the Web Server:**
+**Access the Web Server:**
    - Visit `http://<load_balancer_ip>` in a browser to verify the system information page.
    - Visit `http://<load_balancer_ip>/documents/` to verify file server functionality.
-
-2. **Load Balancer Test:**
-   - Disable Nginx on one droplet:
-     ```bash
-     sudo systemctl stop nginx
-     ```
-   - Confirm the load balancer routes traffic to the other droplet.
